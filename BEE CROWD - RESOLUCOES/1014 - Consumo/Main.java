@@ -10,22 +10,19 @@ import java.util.Scanner;
 public class Main {
  
     public static void main(String[] args) throws IOException {
- 
-        int A, B, C;
         
         Scanner sc = new Scanner(System.in);
         
-        A = sc.nextInt();
-        B = sc.nextInt();
-        C = sc.nextInt();
+        int X = sc.nextInt();
+        float Y = sc.nextFloat();
+        float resultado;
         
-        A = (A+B+Math.abs(A-B))/2;
-        A = (A+C+Math.abs(A-C))/2;
+        resultado = (float) X/Y;
         
-        System.out.println(A+" eh o maior");
+        System.out.printf("%.3f km/l\n", resultado);
         
         sc.close();
- 
+        
     }
  
 }
